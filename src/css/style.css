@@ -79,7 +79,7 @@
 .dropdown-menu {
     display: none;
     position: absolute;
-    right: 0;
+    right: -50px;
     background-color: #fff;
     color: #333;
     border-radius: 5px;
@@ -209,7 +209,7 @@
     }
 
     .hero-text h1 {
-        font-size: 56px;
+        font-size: 36px;
     }
 
     .hero-text p {
@@ -265,17 +265,3 @@
         display: block;
     }
 }
-
-@media (max-width: 1024px) {
-
-    .hero-text h1 {
-        font-size: 30px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-}
-
-
-

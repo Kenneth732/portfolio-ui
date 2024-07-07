@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
 <body>
     <nav class="navbar">
         <div class="navbar-container">
@@ -22,8 +20,7 @@
                 <a href="#" class="nav-item">Contact</a>
                 <div class="profile-menu">
                     <button class="profile-button" id="profileButton">
-                        <img src="https://images.pexels.com/photos/1205716/pexels-photo-1205716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="User Profile" class="profile-pic">
+                        <img src="https://images.pexels.com/photos/1205716/pexels-photo-1205716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="User Profile" class="profile-pic">
                         <span class="username">John Doe</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
@@ -46,15 +43,25 @@
                 <a href="#" class="btn-primary">Learn More</a>
             </div>
             <div class="hero-image">
-                <img src="https://images.pexels.com/photos/2014875/pexels-photo-2014875.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-                    alt="Hero Image">
+                <img src="https://images.pexels.com/photos/2014875/pexels-photo-2014875.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Hero Image">
             </div>
         </div>
     </section>
 
+    <script>
+        // JavaScript for dropdown menu toggle
+        const profileButton = document.getElementById('profileButton');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navbarMenu = document.getElementById('navbarMenu');
 
-  
-    <script src="./src/js/script.js"></script>
+        profileButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('show');
+        });
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('show');
+        });
+    </script>
 </body>
-
 </html>
